@@ -11,10 +11,10 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Metrics/BlockLength:
-  Exclude: 
+  Exclude:
     - 'Gemfile'
     - 'Rakefile'
     - 'spec/**/*.rb'
 
-Metrics/AbcSize: 
+Metrics/AbcSize:
   Enabled: false

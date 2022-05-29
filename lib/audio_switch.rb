@@ -1,9 +1,9 @@
 require 'logger'
-require_relative 'app_logger.rb'
-require_relative 'audio_switch/pactl.rb'
-require_relative 'audio_switch/model.rb'
-require_relative 'audio_switch/ui.rb'
-require_relative 'audio_switch/version.rb'
+require_relative 'app_logger'
+require_relative 'audio_switch/pactl'
+require_relative 'audio_switch/model'
+require_relative 'audio_switch/ui'
+require_relative 'audio_switch/version'
 
 module AudioSwitch
   LOG = configure_logger
