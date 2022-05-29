@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    audio_switch (0.0.7)
+    audio_switch (0.0.8)
       gtk2 (~> 3.4.3)
       ruby-libappindicator (~> 0.1.5)
 
@@ -101,7 +101,7 @@ PLATFORMS
 
 DEPENDENCIES
   audio_switch!
-  bundler (~> 1.12)
+  bundler (~> 2.3.5)
   rake (~> 12.3)
   rspec (~> 3.5)
   rspec-wait (~> 0.0.9)

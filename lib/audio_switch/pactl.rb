@@ -10,11 +10,11 @@ module AudioSwitch
     def default_sink=(sink_id)
       AudioSwitch::LOG.info "setting default sink to '#{sink_id}'"
       # pactl doesn't have this command
-      `pacmd set-default-sink #{sink_id}`
+      `pactl set-default-sink #{sink_id}`
     end
 
     def sinks
-      default_sink_name = self.class.parse_default_sink(`pacmd stat`)
+      default_sink_name = `pactl get-default-sink`.strip
       self.class.parse_sinks(`pactl list sinks`, default_sink_name)
     end
 
@@ -103,10 +103,6 @@ module AudioSwitch
           { marker: 'Mute:', property: :mute }
         ]
       ).each { |source| source[:mute] = source[:mute] == 'yes' }
-    end
-
-    def self.parse_default_sink(out)
-      Out.new(out).parse_property('Default sink name:')
     end
 
     class Out

@@ -23,7 +23,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'gtk2', '~> 3.4.3'
   gem.add_dependency 'ruby-libappindicator', '~> 0.1.5'
 
-  gem.add_development_dependency 'bundler', '~> 1.12'
+  gem.add_development_dependency 'bundler', '~> 2.3.5'
   gem.add_development_dependency 'rake', '~> 12.3'
   gem.add_development_dependency 'rspec', '~> 3.5'
   gem.add_development_dependency 'rspec-wait', '~> 0.0.9'

@@ -1,7 +1,7 @@
 # Audio switch applet for Ubuntu
 
 Provides an indicator that lets one switch between pulseaudio sinks, toggle RTP sink and inputs. Applet is tested on
-Ubuntu 18.04. It uses `pactl` and `pacmd` programs to control sound settings.
+Ubuntu 22.04. It uses `pactl` to control sound settings.
 
 ## Installation
 

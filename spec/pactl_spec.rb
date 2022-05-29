@@ -27,12 +27,6 @@ describe Pactl do
     expect(inputs).to eql([{ id: '100' }, { id: '104' }])
   end
 
-  it 'should parse pactl stat' do
-    default_sink = Pactl.parse_default_sink(File.read('spec/resources/pacmd_stat'))
-
-    expect(default_sink).to eql('alsa_output.pci-0000_00_1b.0.analog-stereo')
-  end
-
   it 'should parse pactl modules' do
     modules = Pactl.parse_modules(File.read('spec/resources/pactl_list_modules'))
 
